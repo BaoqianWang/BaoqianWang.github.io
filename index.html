@@ -36,15 +36,10 @@
                 <a href="mailto:bawang@ucsd.edu">Email</a> &nbsp/&nbsp
                 <!-- <a href="data/CV_CihangXie.pdf">CV</a> &nbsp/&nbsp -->
                 <a href="https://scholar.google.com/citations?user=bsz5UfUAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/BaoqianWang">Github</a>&nbsp/&nbsp
-                <a href="./data/BaoqianWang3.pdf">CV</a>
+                <a href="https://github.com/BaoqianWang">Github</a>
+                <!-- <a href="./data/BaoqianWang3.pdf">CV</a> -->
               </p>
-              <!-- <p style="text-align:center">
-                <a href="https://twitter.com/cihangxie?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @cihangxie</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </p> -->
             </td>
-
-
             <td style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/BaoqianWang.jpg"><img style="width:80%;max-width:80%;border-radius:80%" alt="profile photo" src="images/BaoqianWang.jpg" class="hoverZoomLink"></a>
             </td>
@@ -60,6 +55,9 @@
           </tr>
 
         </tbody></table>
+        <ul>
+          [05.12.2022] I will start a summer internship at Boeing Research and Technology (BR&T), The Boeing Company as an AI researcher.
+        </ul>
         <ul>
           [11.19.2021] I passed the University Qualifying Exam and became a Ph.D. candidate.
         </ul>
@@ -133,10 +131,41 @@
               <br>
               <font color="blue">Abstract:</font> This paper aims to mitigate straggler effects in synchronous distributed learning for multi-agent reinforcement learning (MARL) problems. Stragglers arise frequently in a distributed learning system, due to the existence of various system disturbances such as slow-downs or failures of compute nodes and communication bottlenecks. To resolve this issue, we propose a coded distributed learning framework, which speeds up the training of MARL algorithms in the presence of stragglers, while maintaining the same accuracy as the centralized approach. As an illustration, a coded distributed version of the multi-agent deep deterministic policy gradient(MADDPG) algorithm is developed and evaluated. Different coding schemes, including maximum distance separable (MDS)code, random sparse code, replication-based code, and regular low density parity check (LDPC) code are also investigated. Simulations in several multi-robot problems demonstrate the promising performance of the proposed framework.
               <br>
-              <br>
+              <div class="paper" id="xie2020advprop">
               <a href="https://arxiv.org/abs/2101.02308">PDF</a>
               <a href="https://baoqianwang.github.io/coding_marl_website/">/ Project Website</a>
               <a href="https://github.com/BaoqianWang/coding_distributed_marl">/ Code</a>
+            </div>
+              </p>
+          </td>
+      </tr>
+      <tr>
+          <td style="padding:20px; padding-top: 60px; width:35%;vertical-align:middle">
+           <img src='images/data_driven_framework.PNG' width=100% height="220">
+           <img src='images/multi_agent.gif' width=100% height="220">
+
+           <!-- <video width=100% height="100" autoplay muted controls loop>
+               <source src="images/2019aiaa.mp4" type="video/mp4">
+           </video> -->
+                 </td>
+          <td style="width:75%; padding-top: 60px; vertical-align:middle">
+              <p>
+                  <papertitle>Data-Driven Multi-UAV Navigation in Large-Scale Dynamic Environments Under Wind Disturbances</papertitle>
+              <br>
+              <strong>Baoqian Wang</strong>,
+              <a href="https://smile.sdsu.edu/">Junfei Xie</a>,
+              <a href="https://mentis.uta.edu/explore/profile/yan-wan">Jun Chen</a>
+              <br>
+              AIAA Scitech 2021 Forum
+              <br>
+              <font color="blue">Abstract:</font> In the near future, large amount of unmanned aerial vehicles (UAVs) are expected to appear in the airspace. To ensure the safety of the airspace, there are many daunting technical problems to tackle, one of which is how to navigate multiple UAVs safely and efficiently in the large-scale airspace with both static and dynamic obstacles under
+              wind disturbances. This paper solves this problem by developing a novel data-driven multi-UAV navigation framework that combines $A^*$ algorithm with a state-of-the-art deep reinforcement learning (DRL) method. The $A^*$ algorithm generates a sequence of waypoints for each UAV and the DRL ensures that the UAV can reach each waypoint in order while satisfying all dynamic constraints and safety requirements.
+              Furthermore, our framework significantly expedites the online planning procedure by offloading most computations to offline and limiting online computing to
+only path fine-tuning and dynamic obstacle avoidance. The simulation studies show the good performance of the proposed framework.
+              <br>
+              <div class="paper" id="xie2020advprop">
+                <a href="./data/data_driven.pdf">PDF</a>
+              </div>
               </p>
           </td>
       </tr>
@@ -174,20 +203,19 @@ then  designed.  To  enhance  the  flexibility  and  programmability  of  the  p
 investigated. Finally, they test the performance of their prototype by executing real UAS onboard computing tasks, the results of
 which verify the feasibility and potentials of the proposed airborne computing platform.
               <br>
-              </p>
               <div class="paper" id="xie2020advprop">
                   <a href="./data/iet.pdf">PDF</a> /
                   <a href="https://utari.uta.edu/research/airborne/">Project Website</a> /
                   <a href="https://github.com/BaoqianWang/VirtualizationOnJetsonTX2">Code</a>
               </div>
+              </p>
           </td>
       </tr> <!--xie2020sat-->
 
 
       <tr>
           <td style="padding:20px; padding-top: 60px; width:35%;vertical-align:middle">
-           <img src='images/lstm_aiaa.png' width=100% height="100">
-           <img src='images/2019aiaa_uav.png' width=100% height="100">
+           <img src='images/uas_trajectory.PNG' width=100% height="220">
            <video width=100% height="100" autoplay muted controls loop>
                <source src="images/2019aiaa.mp4" type="video/mp4">
            </video>
@@ -210,8 +238,9 @@ may not perfectly capture the true dynamics of the UAV of interest, to generate 
 data and use these data to train a data-based model.This baseline model is then tuned using small amount
 of real flight data to capture the true dynamics of the targeted UAV.
               <br>
-              <br>
+              <div class="paper" id="xie2020advprop">
                 <a href="./data/3d_aiaa.pdf">PDF</a>
+              </div>
               </p>
           </td>
       </tr>
@@ -243,7 +272,7 @@ of real flight data to capture the true dynamics of the targeted UAV.
                 <a href="https://github.com/BaoqianWang/MobileRobotNavigation">
                     <papertitle>Vision-based Autonomous Driving Robot Capable of Navigation in Unknown and Dynamic Rural Environments</papertitle>
                 </a>
-                  </p>
+                <br>
                 <a href="https://smile.sdsu.edu/">Ramiz Hanan</a>,
                 <a href="https://scholar.google.com/citations?user=DDS_RN0AAAAJ&hl=en">David Pierce Walker-Howell</a>,
                 <a href="https://mentis.uta.edu/explore/profile/yan-wan">Leo Peralta</a>,
@@ -254,6 +283,7 @@ of real flight data to capture the true dynamics of the targeted UAV.
                 <br>
                 <font color="blue">Abstract:</font> In this project, we developed a modular, intelligent, and autonomous driving robot that is not only capable of navigating in a known urban environment, but also in an unknown and dynamic rural environment with unpaved roads, which is achieved by a deep reinforcement learning algorithm, namely GA3C.
                 <br>
+                </p>
                 <div class="paper" id="cleverhans">
                     <a href="https://github.com/BaoqianWang/MobileRobotNavigation">Code</a>
                 </div>
@@ -279,12 +309,12 @@ of real flight data to capture the true dynamics of the targeted UAV.
               <a href="https://github.com/BaoqianWang/MobileRobotNavigation">
                   <papertitle>Geolocation using video sensor measurements</papertitle>
               </a>
-                </p>
               <br>
               <font color="blue">Abstract:</font> In this project, a simple geolocation algorithm using video sensor measurements is implemented in real robot. In particular, the mobile robot positions
               in the image frame are obtained through YoloV3. Given the position of the camera in real world and intrinsic parameters of the camera, the position of the mobile robot in the real world frame can be obtained
               through camera projection model. The estimated position are then compared to the real positions recorded by motion capture system.
               <br>
+              </p>
               <div class="paper" id="cleverhans">
                 <a href="data/object_tracking.pdf">Paper</a>
                 <a href="https://github.com/BaoqianWang/ObjectLocalization">/ Code</a>
@@ -311,10 +341,9 @@ of real flight data to capture the true dynamics of the targeted UAV.
                     <papertitle>Robotics Sensing and Estimation</papertitle>
                 </a>
                 <br>
-                </p>
-                <br>
                 <font color="blue">Abstract:</font> In this course, three projects were completed including stop sign detection using logistic regression model, particle filter Simultaneous Localization and Mapping (SLAM) and visual intertial SLAM. The code is written in Python.
                 <br>
+                </p>
                 <div class="paper" id="cleverhans">
                     <a href="https://github.com/BaoqianWang/RoboticsSensingEstimation">Code</a>
                 </div>
