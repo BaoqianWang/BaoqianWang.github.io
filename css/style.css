@@ -1,0 +1,51 @@
+/* Additional utility styles */
+.paper > pre {
+    width: 100%;
+    max-width: 560px;
+    overflow: auto;
+    background: var(--background-secondary);
+    padding: 1rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    margin: 3rem 0;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .navbar {
+        display: none;
+    }
+    
+    body {
+        padding-top: 0;
+    }
+    
+    .hero-section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+    
+    .project-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+}
